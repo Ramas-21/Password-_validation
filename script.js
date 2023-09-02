@@ -11,7 +11,7 @@ const requirements = [
     {regex: /[A-Z]/, index: 4}, // At least one uppercase letter
 ]
 
-passwordInput.addEventListener("keyup", () =>{
+passwordInput.addEventListener("keyup", (e) =>{
     // looping through each object item of the array
     requirements.forEach(item =>{
         // check if the pass matches the requirement regex
