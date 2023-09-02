@@ -73,3 +73,22 @@ body {
 .requirements li.valid span{
     color: #999;
 }
+
+/* Media query to make it responsive */
+@media screen and (max-width: 500px) {
+    body, .wrapper{
+        padding: 15px;
+    }
+    .wrapper .pass-field {
+        height: 55px;
+    }
+    .pass-field input, .content p {
+        font-size: 1.15rem;
+    }
+    .pass-field i, .requirements li {
+        font-size: 1.1rem;
+    }
+    .requirements li span {
+        margin-left: 7px;
+    }
+}
