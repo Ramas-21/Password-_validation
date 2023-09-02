@@ -63,6 +63,13 @@ body {
     color: #999;
     width: 20px;
 }
+.requirements li.valid i{
+    font-size: 1.2rem;
+    color: #4285f4;
+}
 .requirements li span{
     margin-left: 12px;
+}
+.requirements li.valid span{
+    color: #999;
 }

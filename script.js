@@ -21,9 +21,12 @@ passwordInput.addEventListener("keyup", (e) =>{
         // updating icon of requirement item if requirements matches or not
         if(isValid) {
             requirementItem.firstElementChild.className = "fa-solid fa-check";
+            // fading out the particular text if the password is matched
+            requirementItem.classList.add("valid");
         }
         else{
-            requirementItem.firstElementChild.className = "fa-solid fa-circle"; 
+            requirementItem.firstElementChild.className = "fa-solid fa-circle";
+            requirementItem.classList.remove("valid");
         }
     });
 });
