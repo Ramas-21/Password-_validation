@@ -63,3 +63,6 @@ body {
     color: #999;
     width: 20px;
 }
+.requirements li span{
+    margin-left: 12px;
+}
