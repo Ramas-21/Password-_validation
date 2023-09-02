@@ -18,6 +18,7 @@ passwordInput.addEventListener("keyup", () =>{
         const isValid = item.regex.test(e.target.value);
         const requirementItem = requirementList[item.index];
 
+        // updating icon of requirement item if requirements matches or not
         if(isValid) {
             requirementItem.firstElementChild.className = "fa-solid fa-check";
         }
