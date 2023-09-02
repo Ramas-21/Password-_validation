@@ -1,6 +1,6 @@
 const passwordInput = document.querySelector(".pass-field input");
 const eyeIcon = document.querySelector(".pass-field i");
-cost requirementList = document.querySelectorAll(".requirements li");
+const requirementList = document.querySelectorAll(".requirements li");
 
 // An array of password requirements
 const requirements = [
@@ -16,7 +16,14 @@ passwordInput.addEventListener("keyup", () =>{
     requirements.forEach(item =>{
         // check if the pass matches the requirement regex
         const isValid = item.regex.test(e.target.value);
-        const requirementItem = requirementList[]
+        const requirementItem = requirementList[item.index];
+
+        if(isValid) {
+            requirementItem.firstElementChild.className = "fa-solid fa-check";
+        }
+        else{
+            requirementItem.firstElementChild.className = "fa-solid fa-circle"; 
+        }
     });
 });
 
