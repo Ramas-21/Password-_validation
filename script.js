@@ -3,11 +3,11 @@ const eyeIcon = document.querySelector(".pass-field i");
 
 // An array of password requirements
 const requirements = [
-    {regex: /.{8,}/, index: 0},
-    {regex: /[0-9]/, index: 1},
-    {regex: /[a-z]/, index: 2},
-    {regex: /[^A-Za-z0-9]/, index: 3},
-    {regex: /[A-Z]/, index: 4},
+    {regex: /.{8,}/, index: 0}, // minimum of 8 characters
+    {regex: /[0-9]/, index: 1}, // At least one number
+    {regex: /[a-z]/, index: 2}, // At least one lowercase letter
+    {regex: /[^A-Za-z0-9]/, index: 3}, // At least one spacial character
+    {regex: /[A-Z]/, index: 4}, // At least one uppercase letter
 ]
 
 passwordInput.addEventListener("keyup", () =>{
