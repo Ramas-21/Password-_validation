@@ -14,5 +14,11 @@ body {
     background: #4285f4;
 }
 .wrapper {
+    background: #fff;
+    width: 450px;
+    padding: 28px;
+    border-radius: 7px;
+}
+.wrapper .pass-field{
     
 }
